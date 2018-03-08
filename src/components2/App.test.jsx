@@ -7,11 +7,9 @@ import App from './App';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('App', () => {
-
   it('renders', () => {
     const app = shallow(<App />);
 
     expect(toJson(app)).toMatchSnapshot();
   });
-
 });
